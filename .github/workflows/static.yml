@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV de Claudia Moltó Terol</title>
+  <style>
+    /* ----- RESETEO BÁSICO ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    body {
+      background-color: #f0f0f0;
+      line-height: 1.5;
+    }
+
+    /* ----- CONTENEDOR PRINCIPAL ----- */
+    .cv-container {
+      display: flex;
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    /* ----- COLUMNA IZQUIERDA: DATOS PERSONALES ----- */
+    .left-column {
+      width: 35%;
+      background-color: #f8f8f8;
+      padding: 30px;
+    }
+
+    .left-column h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+      color: #444;
+    }
+
+    .left-column .job-title {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .profile-info {
+      margin-bottom: 30px;
+    }
+
+    .profile-info h2 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .profile-info p {
+      margin-bottom: 5px;
+      font-size: 0.95rem;
+    }
+
+    /* Secciones dentro de la columna izquierda */
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #777;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .section-list {
+      margin-bottom: 20px;
+    }
+
+    .section-list li {
+      list-style: none;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+    }
+
+    /* ----- COLUMNA DERECHA: EXPERIENCIA, ETC. ----- */
+    .right-column {
+      width: 65%;
+      padding: 30px;
+    }
+
+    .cv-section {
+      margin-bottom: 30px;
+    }
+
+    .cv-section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    /* Experiencia laboral: cada ítem */
+    .experience-item {
+      margin-bottom: 20px;
+    }
+
+    .experience-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      color: #444;
+    }
+
+    .experience-item .job-duration {
+      font-size: 0.9rem;
+      color: #999;
+      margin-bottom: 5px;
+    }
+
+    .experience-item p {
+      font-size: 0.95rem;
+      margin-left: 15px;
+      margin-bottom: 5px;
+      line-height: 1.4;
+    }
+
+    /* Responsivo para pantallas pequeñas */
+    @media (max-width: 768px) {
+      .cv-container {
+        flex-direction: column;
+      }
+      .left-column, .right-column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+
+    <!-- COLUMNA IZQUIERDA: DATOS PERSONALES -->
+    <div class="left-column">
+      <h1>Claudia Moltó Terol</h1>
+      <div class="job-title">Farmacéutica / Marketing Inmunología</div>
+
+      <!-- Datos de contacto y ubicación -->
+      <div class="profile-info">
+        <h2>Detalles personales</h2>
+        <p><strong>Dirección:</strong> Bocairent (Alicante)</p>
+        <p><strong>Correo:</strong> <a href="mailto:claudiamoltoterol@gmail.com">claudiamoltoterol@gmail.com</a></p>
+        <p><strong>Teléfono:</strong> 637 902 612</p>
+      </div>
+
+      <!-- Idiomas -->
+      <div class="profile-info">
+        <h2>Idiomas</h2>
+        <ul class="section-list">
+          <li>Inglés</li>
+          <li>Francés</li>
+          <li>Español</li>
+          <li>Catalán</li>
+        </ul>
+      </div>
+
+      <!-- Pasiones -->
+      <div class="profile-info">
+        <h2>Pasiones</h2>
+        <ul class="section-list">
+          <li>Nutrición y Salud</li>
+          <li>Trail y running por asfalto</li>
+        </ul>
+      </div>
+
+      <!-- Disponibilidad -->
+      <div class="profile-info">
+        <h2>Disponibilidad</h2>
+        <p>Inmediata</p>
+      </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: EXPERIENCIA, EDUCACIÓN, ETC. -->
+    <div class="right-column">
+
+      <!-- Experiencia Laboral -->
+      <div class="cv-section">
+        <h2>Experiencia laboral</h2>
+
+        <div class="experience-item">
+          <h3>Farmacéutica adjunta</h3>
+          <div class="job-duration">Farmacia Ferri Carbonell, Cocentaina, Alicante (sept 2021 - dic 2021)</div>
+          <p>- Dispensación de medicamentos y consejo farmacéutico personalizado.</p>
+          <p>- Supervisión del stock y pedidos.</p>
+        </div>
+
+        <div class="experience-item">
+          <h3>Manager Marketing Inmunología</h3>
+          <div class="job-duration">Lilly, París (nov 2017 - ene 2021)</div>
+          <p>- Gestión de un equipo de 30 personas.</p>
+          <p>- Diseño de Business Plan y seguimiento mensual con la dirección.</p>
+          <p>- Elaboración de KPIs de indicadores de negocio y seguimiento.</p>
+          <p>- Coordinación con Recursos Humanos para la formación interna.</p>
+          <p>- Colaboración en el lanzamiento comercial de una nueva Unidad de Negocio.</p>
+        </div>
+      </div>
+
+      <!-- (Ejemplo) Formación -->
+      <div class="cv-section">
+        <h2>Formación</h2>
+        <div class="experience-item">
+          <h3>Grado en Farmacia</h3>
+          <div class="job-duration">Universidad de XYZ (2010 - 2014)</div>
+          <p>- Profundización en bioquímica, farmacología y legislación sanitaria.</p>
+        </div>
+      </div>
+
+      <!-- (Opcional) Otras secciones: cursos, congresos, etc. -->
+      <div class="cv-section">
+        <h2>Otros datos de interés</h2>
+        <p>- Curso de especialización en Marketing Farmacéutico.</p>
+        <p>- Participación en congresos de salud y nutrición.</p>
+      </div>
+
+    </div> <!-- Fin columna derecha -->
+  </div> <!-- Fin contenedor principal -->
+
+</body>
+</html>
